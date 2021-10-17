@@ -1,0 +1,330 @@
+body{
+    width: 100%;
+    margin:0;
+}
+
+.row
+{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after
+{
+    display:table;
+    clear:both;
+    content: "";
+
+}
+
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+
+
+
+
+*
+{
+    box-sizing: border-box;
+}
+
+
+
+
+
+.navbar
+{
+    background-color: rgb(68, 68, 75);
+    overflow: hidden;
+}
+.navbar ul.navtop
+{
+    color: antiquewhite;
+    width: 100%;
+    margin:0;
+    overflow: hidden;
+    padding: 0%;
+}
+
+.navbar ul.navtop li
+{
+    float:left;
+    list-style:none;
+    padding: 10px;
+}
+
+.navbar ul.navtop li.navtop-right
+{
+    float:right;
+    text-decoration: none;
+    color: azure;
+}
+
+.navbar ul.navtop li a
+{
+    text-decoration: none;
+    color: azure;
+    padding:0px;
+}
+
+.navbar ul.navtop li a:hover{
+    color: rgb(67, 67, 233);
+    transition: 0.6s;
+}
+
+.navbar ul.navtop li.dropdown
+{
+    display:none;
+}
+
+
+input[type="text" ]{
+    width:350px;   
+    border-radius:15px;
+}
+input[type="password" ]{
+    width:350px;   
+    border-radius:15px;
+    size: 50px;
+}
+
+/***********mobile*************/
+
+
+
+@media screen and (max-width:680px){
+     div.navbar ul.navtop :not(:nth-child(1))
+    {
+        display:none;
+    }
+     div.navbar ul.navtop li.dropdown
+    {
+        display:block;
+        float: right;
+    }
+
+     div.navbar ul.navtop.responsive 
+    {
+        position:relative;
+       
+    }
+    div.navbar ul.navtop.responsive  li
+    {
+        display:inline;
+        float:none;
+    }
+    div.navbar ul.navtop.responsive  li a
+    {
+        display:block;
+        text-align:left;
+    }
+
+    div.navbar ul.navtop.responsive li.dropdown a
+    {
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+
+    
+    div.section-1 div.row div.col-6.left div.leftcol
+    {
+        margin:20px;
+    }
+
+    div.section-1 div.row div.col-6.right div.rightcol iframe
+    {
+        margin:20px;
+    }
+
+    div.section-1 div.row div.col-6
+    {
+        width: 100%;
+        margin:0;
+    }
+   
+    div.section-2 div.row div.col-4 
+    {
+        width: 100%;
+        margin:0;
+    }
+
+    div.section-3 div.row div.col-6
+    {
+        width: 100%;
+        margin:0;
+    }
+    div.section-3 div.row div.col-6.right div.image 
+    {
+        text-align:none;
+        width: 100%;
+        margin:0;
+        padding-top: 20px;
+    }
+
+    footer.row div.col-3
+    {
+        width:50%;
+        margin:0;
+
+    }
+
+    
+}
+
+
+
+
+/********** section-1*********/
+
+
+div.section-1 div.row
+{
+    width: 100%;
+    background-color:rgb(75, 139, 190);
+    background: -webkit-linear-gradient(blue,rgb(75, 139, 190));
+}
+div.section-1 div.row div.col-6.left  div.leftcol  h1.heading_section-1
+{
+    margin:0;
+    color:azure;
+    font-size: 30px;
+    line-height: 40px;
+}
+div.section-1 div.row div.col-6.left  div.leftcol h1.heading2_section-1
+{
+    color:azure;
+    font-size: 20px;
+    line-height: 9px;
+    padding-top:20px;
+}
+.section-1 div.row div.col-6.left div.leftcol
+{
+    margin-left: 30%;
+    margin-top: 8%;
+}
+
+.section-1 div.row div.col-6.right div.rightcol iframe
+{
+    position: relative;
+    margin-top: 8%;
+    margin-left:10%;
+    border: solid azure;
+    border-radius: 14px;
+    padding:5px;
+}
+
+
+
+
+
+
+/************* section-2************/
+
+
+header
+{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;;
+}
+
+div.box
+{
+    border-radius: 7px;
+    line-height: 50px;
+    text-align: center;
+    margin:10px;
+    padding:10px 8px 15px 8px;
+    box-shadow: 0px 0px 2px 3px rgba(106,180,230,1);
+}
+
+div.button
+{
+    margin:20px;
+    text-align: center;
+}
+
+div.button:hover
+{
+    transition: 0.6s;
+}
+
+
+div.button button
+{
+    background-color: blue;
+    color: azure;
+    border-radius: 7px;
+    font-size: 25px;
+    padding: 10px;;
+    
+}
+
+
+/**************** section-3**************/
+
+div.section-3 div.row div.col-6.left h4
+{
+    margin:20px;
+    font-size:20px;
+    line-height: 30px;
+}
+
+div.section-3 div.row div.col-6.right div.image 
+{
+    text-align: center;
+}
+
+div.image img
+{
+    box-shadow: 0px 0px 10px 13px rgba(0, 0, 0, 0.5);
+    border-radius: 14px;
+}
+
+
+/****************** Footer **********/
+
+
+
+footer
+{
+    padding-top: 40px;;
+}
+
+
+
+footer.row div.col-3 
+{
+    background-color: black;
+    text-align: center;
+} 
+
+footer.row div.col-3 ul li
+{
+    color:azure;
+}
+footer.row div.col-3 ul
+{
+    list-style: none;
+    line-height: 40px;
+}
+
+footer.row div.col-3 h2
+{
+    color:azure;
+    padding-left:35px;
+}
